@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --font-anton: 'Anton', sans-serif;
+}
+
+html,
+body {
+  height: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
