@@ -11,6 +11,7 @@ import Shop from './pages/Shop'
 import Policy from './pages/Policy'
 import Cart from './pages/Cart'
 import ProductDetails from './pages/ProductDetails';
+import CheckOut from './pages/CheckOut';
 
 
 
@@ -60,6 +61,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/shop/:id" element={<ProductDetails/>} />
+          <Route path="/checkout" element={<CheckOut/>} />
         </Routes>
 
         <Footer />

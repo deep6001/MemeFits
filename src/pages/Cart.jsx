@@ -6,6 +6,7 @@ import {
   removeFromCart,
   clearCart,
 } from "../Store/CartSlice";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const dispatch = useDispatch();
@@ -87,13 +88,15 @@ function Cart() {
                 <p className="text-lg font-semibold">Total</p>
                 <p className="text-lg font-semibold">₹{subtotal}</p>
               </div>
-
+              <Link to="/checkout">
+         
               <button
                 className="w-full mt-6 bg-black text-white py-3 rounded-md hover:bg-gray-800"
                
               >
                 Proceed to Checkout
               </button>
+                   </Link>
             </div>
           </div>
         ) : (
